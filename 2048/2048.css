@@ -8,10 +8,11 @@ header h1{
 	font-family: Arial;
 	font-size: 40px;
 	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 header #newgamebutton{
-	display: block;
-	margin:20px auto;
+	display: inline-block;
 
 	width: 100px;
 	padding:10px;
@@ -28,9 +29,10 @@ header #newgamebutton:hover{
 	background-color: #9f8b77;
 }
 header p{
+	display: inline-block;
 	font-family: Arial;
 	font-size: 25px;
-	margin:20px auto;
+	margin: 0 0 0 20px;
 }
 
 #grid-container{
