@@ -73,6 +73,7 @@ function updateBoardView(){
 			$("#grid-container").append("<div class='number-cell' id='number-cell-"+i+"-"+j+"'></div>");
 			var theNumberCell=$("#number-cell-"+i+"-"+j);
 
+	        theNumberCell.css("font-size",0.6*cellSideLength+"px");
 			//若格子的数字为0则不显示
 			if(board[i][j]==0){
 				theNumberCell.css("width","0px");
@@ -88,7 +89,9 @@ function updateBoardView(){
 				theNumberCell.css("background-color",getNumberBackGroundColor(board[i][j]));
 				theNumberCell.css("color",getNumberColor(board[i][j]));
 				theNumberCell.text(board[i][j]);
-			    theNumberCell.css("fontSize","40px");
+			    theNumberCell.css("fontSize",cellSideLength+"px");
+	            theNumberCell.css("font-size",0.4*cellSideLength+"px");
+
 			}
 			else{
 				theNumberCell.css("width",cellSideLength+"px");
@@ -98,11 +101,11 @@ function updateBoardView(){
 				theNumberCell.css("background-color",getNumberBackGroundColor(board[i][j]));
 				theNumberCell.css("color",getNumberColor(board[i][j]));
 				theNumberCell.text(board[i][j]);
+
 			}
 		hasconflict[i][j]=false;
 		}
 		$(".number-cell").css("line-height",cellSideLength+"px");
-		$(".number-cell").css("font-size",0.6*cellSideLength+"px");
 
 }
 
